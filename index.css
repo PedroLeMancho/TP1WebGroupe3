@@ -1,76 +1,80 @@
-input{
+.divMaman div{
+    width: 300px;
+    height: 450px;
+    background-color: white;
     text-align: center;
-    border: none;
-    padding: 1%;
-    margin: 0.5%;
-    font-weight: bold;
-    border-radius: 2px;
-    background-color: rgb(160, 145, 99);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:magenta;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
-input::placeholder{
-    color:white;
+.divMaman div:hover{
+    scale:1.1;
 }
 
-input[type="submit"]{
-    background-color: black;
+.divMaman div button{
+    background-color: rgb(0, 0, 0);
     color: white;
-    font-weight: bold;
-    padding: 1%;
-    margin: 0.5%;
     border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.div1{
-    width: 200px;
-    height:200px;
-    background-color: red;
+.divMaman div button:hover{
+    scale:1.1;
+    background-color: magenta;
+    transition:1s ease-in-out;
+    cursor: pointer;
+    animation: rotate 1s ease-in-out infinite;
 }
-.div2{
-    width: 200px;
-    height:200px;
-    background-color: blue;
+
+.divMaman div p{
+    font-weight: bold;
 }
-.div3{
-    width: 200px;
-    height:200px;
-    background-color: yellow;
-}
-.div4{
-    width: 200px;
-    height:200px;
+
+.divMaman{
     background-color: beige;
-}
-.grossediv1{
     display: flex;
-    gap: 10px;
-    margin-bottom: 1%;
-}
-.grossediv2{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1%;
-}
-.grossediv3{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1%;
-}
-.grossediv4{
-    display: flex;
+    gap:10%;
+    height: 100vh;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 1%;
+    padding: 1rem;
 }
-.grossediv5{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1%;
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
-h1{
-    text-align: center;
-    color:red;
+
+img{
+    height: 200px;
+    animation: monter-descente 3s infinite;
 }
-h2{
-    text-align: center;
-    color:blue;
+
+@keyframes monter-descente{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
