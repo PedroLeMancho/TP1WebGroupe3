@@ -1,47 +1,22 @@
-.titre1{
-    color: red;
-}
-
-.titre2{
-    color: blue;
-}
-
-.titre3{
-    color:yellow;
-}
-
-.titre4{
-    color:beige;
-}
-
-.titre5{
-    font-size: 20px;
-}
-
-.titre6{
-    font-size: 2 rem;
-}
-
-.paragraphe1{
+input{
+    text-align: center;
+    border: none;
+    padding: 1%;
+    margin: 0.5%;
     font-weight: bold;
+    border-radius: 2px;
+    background-color: rgb(160, 145, 99);
 }
 
-.paragraphe2{
-    font-weight: 100;
+input::placeholder{
+    color:white;
 }
 
-.span1{
-    font-family: X;
-}
-
-.span2{
-    font-family: Y;
-}
-
-.bouton1{
-    border-radius: 10px;
-}
-
-.bouton2{
-    border-radius: 10%;
+input[type="submit"]{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 1%;
+    margin: 0.5%;
+    border: none;
 }
